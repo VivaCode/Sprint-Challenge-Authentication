@@ -18,7 +18,7 @@ class App extends Component {
               Jokes
             </NavLink>
             &nbsp;|&nbsp;
-            <NavLink to="/login">Login</NavLink>
+            <NavLink to="/api/login">Login</NavLink>
             &nbsp;|&nbsp;
             <button onClick={this.logout}>Signout</button>
           </nav>
@@ -37,7 +37,7 @@ const Home = props => {
   return (
     <div>
       <h1>You must login to view this page</h1>
-      <img src={KCCO} />
+      <img src={KCCO} alt = 'Keep Calm' />
     </div>
   )
 }
