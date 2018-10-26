@@ -32,7 +32,7 @@ export default class jokes extends Component {
       .get(endpoint, options)
       .then(res => {
           console.log(res.data);
-          this.setState({users:res.data});
+          this.setState({jokes:res.data});
       })
       .catch(err => {
           console.log('ERROR', err)
