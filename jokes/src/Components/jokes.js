@@ -8,10 +8,15 @@ export default class jokes extends Component {
   render() {
     return (
       <div>
-         {this.state.jokes.map(joke => (<li key={joke.id}>{joke.setup}
-         <br />
-         {joke.punchline}
-         </li>))}
+          <ul>
+            {this.state.jokes.map(joke => (
+            <li key={joke.id}>
+              <p>{joke.setup}</p>
+              <p>{joke.punchline}</p>
+            </li>
+          ))}
+        </ul>
+         
       </div>
     )
   }
